@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+
+    <style>
+        .box > p {
+            color: blue;
+        }
+
+        h2 + p {
+            color: green;
+        }
+
+        h2 ~ p {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <p>Paragraph 1 (Blue)</p>
+    </div>
+
+    <h2>Title</h2>
+    <p>Paragraph 1 after h2 (Green)</p>
+    <p>Paragraph 2 after h2 (Purple)</p>
+
+    <section>
+        <p>Paragraph 2</p>
+    </section>
+    
+    <div>
+        <p>GURU</p>
+    </div>
+
+</body>
+</html>

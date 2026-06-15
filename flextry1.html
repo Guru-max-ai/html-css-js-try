@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#111;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  padding:10px;
+}
+
+.header{
+  background: linear-gradient(45deg,#ff416c,#ff4b2b);
+  color:white;
+  height:80px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+  border-radius:10px;
+}
+
+.main{
+  flex:1;
+  display:flex;
+  gap:10px;
+}
+
+.sidebar{
+  width:250px;
+  background: linear-gradient(45deg,#36d1dc,#5b86e5);
+  color:white;
+  padding:20px;
+  border-radius:10px;
+}
+
+.content{
+  flex:1;
+  background: linear-gradient(45deg,#11998e,#38ef7d);
+  padding:20px;
+  border-radius:10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+
+.card{
+  flex:1 1 calc(50% - 10px);
+  background:white;
+  color:#333;
+  padding:20px;
+  border-radius:8px;
+  text-align:center;
+  font-weight:bold;
+}
+
+
+.footer{
+  height:60px;
+  background: linear-gradient(45deg,#8e2de2,#4a00e0);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header"> Header</div>
+
+<div class="main">
+  <div class="sidebar"> Sidebar</div>
+
+  <div class="content">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+  </div>
+</div>
+
+<div class="footer"> Footer</div>
+
+</body>
+</html>
